@@ -11,6 +11,11 @@
 </head>
 <style>
     body{
+        background-color: black;
+        color: white;
+    }
+    div{
+        background-color: rgb(55, 55, 55) ;
         font-family:Space Grotesk;
         border: 1px solid grey;
         border-radius: 20px;
@@ -39,6 +44,12 @@
     #secretCode{
         display: none;
     }
+    img{
+        margin-left: 8.5rem;
+    }
+    p{
+        text-align: center;
+    }
 </style>
 <body>
     <div>
@@ -53,10 +64,11 @@
             "🤡 Congrats! You unlocked… absolutely nothing.",<br>
             "🧠 Brain.exe has stopped responding.",<br>
             "🎉 Surprise! It's another tutorial.", 💰</p>
+    
+        <form action="/restart">
+            <button name="restart">Restart the game</button>
+        </form>
     </div>
-    <form action="/restart">
-        <button name="restart">Restart the game</button>
-    </form>
     <script>
         const chest = document.getElementById("treasureChest");
         const code = document.getElementById("secretCode");
